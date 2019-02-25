@@ -12,3 +12,5 @@ if sys.version_info[0] == 3 and sys.version_info[1] < 6:
 if __name__ == "__main__":
     PARSER = cli.FullHelpArgumentParser()
     SUBPARSER = PARSER.add_subparsers()
+    EXTRACT = cli.ExtractArgs(SUBPARSER,"extract","Extract the face from pictures")
+    TRAIN = cli
